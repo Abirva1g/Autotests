@@ -1,0 +1,80 @@
+{
+  "id": "d9ec3b35-0d92-43ed-9aec-d099738cf5d7",
+  "version": "2.0",
+  "name": "Login (Selenium IDE)",
+  "url": "http://172.24.120.5:8081",
+  "tests": [{
+    "id": "33805af7-92d1-4a28-884b-e02a49752848",
+    "name": "Login (Selenium IDE)",
+    "commands": [{
+      "id": "cdfb9c7b-aa79-4333-b581-22b9243cecef",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ff1f76a-a379-4e63-ac72-006c394ec33c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "384ba2aa-1cc1-43e9-a89d-887cbe3a1ebe",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-input",
+      "targets": [
+        ["id=login-input", "id"],
+        ["css=#login-input", "css:finder"],
+        ["xpath=//input[@id='login-input']", "xpath:attributes"],
+        ["xpath=//div[@id='login-control-container']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef8206b0-c66b-4c18-bf8b-3135faf047ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-input",
+      "targets": [
+        ["id=login-input", "id"],
+        ["css=#login-input", "css:finder"],
+        ["xpath=//input[@id='login-input']", "xpath:attributes"],
+        ["xpath=//div[@id='login-control-container']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SeleniumIDE"
+    }, {
+      "id": "be670abf-d50d-41bc-8630-8946c5086325",
+      "comment": "",
+      "command": "click",
+      "target": "id=root",
+      "targets": [
+        ["id=root", "id"],
+        ["css=#root", "css:finder"],
+        ["xpath=//div[@id='root']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b67afb6-989b-4608-8d2c-70058a8334df",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0e4000dd-cc82-4955-b3dd-4b92223ae0b5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["33805af7-92d1-4a28-884b-e02a49752848"]
+  }],
+  "urls": ["http://172.24.120.5:8081/"],
+  "plugins": []
+}
