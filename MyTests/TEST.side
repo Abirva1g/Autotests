@@ -1,0 +1,21 @@
+{
+  "id": "8f76c15b-6f97-4bcd-9697-d5ad3980623c",
+  "version": "2.0",
+  "name": "TEST",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "e4301033-5c46-48f3-bcb3-3640ca024af6",
+    "name": "Google",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "a79c8c12-5886-4cd0-b519-c5d043550444",
+    "name": "First Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e4301033-5c46-48f3-bcb3-3640ca024af6"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

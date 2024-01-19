@@ -1,0 +1,91 @@
+{
+  "id": "648e3e63-34cd-41df-9a6e-ff0222946aea",
+  "version": "2.0",
+  "name": "Wiki",
+  "url": "https://ru.wikipedia.org/",
+  "tests": [{
+    "id": "dc674454-6210-428c-8a5f-1f6dea03a68e",
+    "name": "Untitled",
+    "commands": [{
+      "id": "c04f90db-0442-48fb-8ab0-5722b36da238",
+      "comment": "",
+      "command": "open",
+      "target": "https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4be471e9-d308-4e0a-ba67-fd5f79e74f34",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72b62237-07ef-466d-aac6-07341d064d9a",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31e6a054-6aca-4a54-aae4-c429701e2802",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Лувр"
+    }, {
+      "id": "c19a3dbc-5aeb-48ba-add8-8470268a8ae6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6acac829-face-4e83-bed1-cb37e99fd1cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b2e1f236-63f0-4028-bb81-96f1f21cd228",
+    "name": "Second Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dc674454-6210-428c-8a5f-1f6dea03a68e"]
+  }],
+  "urls": ["https://ru.wikipedia.org/"],
+  "plugins": []
+}
