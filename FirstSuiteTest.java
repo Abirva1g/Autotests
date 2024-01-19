@@ -23,25 +23,25 @@ import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 public class FirstSuiteTest {
-    private WebDriver driver;
-    private Map<String, Object> vars;
-    JavascriptExecutor js;
-    @Before
-    public void setUp() {
-        driver = new ChromeDriver();
-        js = (JavascriptExecutor) driver;
-        vars = new HashMap<String, Object>();
-    }
-    @After
-    public void tearDown() {
-        driver.quit();
-    }
-    @Test
-    public void google() {
-        driver.get("https://www.google.com/");
-        driver.manage().window().setSize(new Dimension(1936, 1056));
-        driver.findElement(By.id("APjFqb")).click();
-        driver.findElement(By.name("q")).sendKeys("Selenium");
-        driver.findElement(By.name("btnK")).click();
-    }
+  private WebDriver driver;
+  private Map<String, Object> vars;
+  JavascriptExecutor js;
+  @Before
+  public void setUp() {
+    driver = new ChromeDriver();
+    js = (JavascriptExecutor) driver;
+    vars = new HashMap<String, Object>();
+  }
+  @After
+  public void tearDown() {
+    driver.quit();
+  }
+  @Test
+  public void google() {
+    driver.get("https://www.google.com/");
+    driver.manage().window().setSize(new Dimension(1936, 1056));
+    driver.findElement(By.id("APjFqb")).click();
+    driver.findElement(By.name("q")).sendKeys("Selenium");
+    driver.findElement(By.name("btnK")).click();
+  }
 }
