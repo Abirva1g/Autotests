@@ -1,11 +1,11 @@
 {
   "id": "d9ec3b35-0d92-43ed-9aec-d099738cf5d7",
   "version": "2.0",
-  "name": "Login (Selenium IDE)",
+  "name": "Dz0LoginTest (Selenium IDE)",
   "url": "http://172.24.120.5:8081",
   "tests": [{
     "id": "33805af7-92d1-4a28-884b-e02a49752848",
-    "name": "Login (Selenium IDE)",
+    "name": "Dz0LoginTest (Selenium IDE)",
     "commands": [{
       "id": "cdfb9c7b-aa79-4333-b581-22b9243cecef",
       "comment": "",
