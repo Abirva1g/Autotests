@@ -4,7 +4,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Dz1GetTextTest {
+public class Dz2GetTextTest {
 
     @Test
     public void GetText() {

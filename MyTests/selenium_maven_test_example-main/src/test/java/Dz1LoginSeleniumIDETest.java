@@ -13,7 +13,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 import java.util.*;
 
-public class Dz0LoginSeleniumIDETest {
+public class Dz1LoginSeleniumIDETest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;

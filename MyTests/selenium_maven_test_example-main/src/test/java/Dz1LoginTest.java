@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Dz0LoginTest {
+public class Dz1LoginTest {
 
     @Test
     public void testLogin() {
