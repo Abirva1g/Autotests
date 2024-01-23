@@ -22,26 +22,32 @@ import org.openqa.selenium.Keys;
 import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import org.junit.jupiter.api.*;
+@DisplayName(value= "Регистрация на тестовом стенде")
 public class FirstSuiteTest {
-    private WebDriver driver;
-    private Map<String, Object> vars;
-    JavascriptExecutor js;
-    @Before
-    public void setUp() {
+    WebDriver driver;
+    @BeforeEach
+    public void intiDriver() {
         driver = new ChromeDriver();
-        js = (JavascriptExecutor) driver;
-        vars = new HashMap<String, Object>();
     }
-    @After
-    public void tearDown() {
+    @AfterEach
+    public void closeDriver() {
         driver.quit();
     }
     @Test
-    public void google() {
-        driver.get("https://www.google.com/");
-        driver.manage().window().setSize(new Dimension(1936, 1056));
-        driver.findElement(By.id("APjFqb")).click();
-        driver.findElement(By.name("q")).sendKeys("Selenium");
-        driver.findElement(By.name("btnK")).click();
+    @DisplayName(value = "Тест регистрации")
+    public void registrationTest(){
+        //Открытие стенда
+        driver.get("http://172.24.120.5:8081/login");
+        //Кликаем на нопку Зарегистрироваться
+        driver.findElement(By.id("form_register_button")).click();
+        //Ввести значение в поле Логин
+        driver.findElement(By.xpath("//input[@placeholder='Логин']")).sendKeys("login1");
+        //Ввести значение в поле Пароль
+        driver.findElement(By.xpath("//input[@placeholder='Пароль']")).sendKeys("passTest");
+        //Кликаем по кнопке Создать
+        driver.findElement(By.xpath("//button[text()='Создать']")).click();
     }
 }
+
+
