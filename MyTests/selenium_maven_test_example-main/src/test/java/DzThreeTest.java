@@ -2,7 +2,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.junit.jupiter.api.*;
-
 @DisplayName(value = "Домашнее задание - Урок 3: JUnit:Аннотации")
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
