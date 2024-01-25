@@ -43,7 +43,7 @@ public class DzFourTest {
     }
 
     @Test
-    @DisplayName(value = "Тест клика по корзине явное)")
+    @DisplayName(value = "Тест клика по корзине (явное)")
     public void waitTrash2() {
         //Объявляем WebDriverWait
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
