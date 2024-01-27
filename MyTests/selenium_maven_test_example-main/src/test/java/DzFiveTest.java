@@ -9,6 +9,7 @@ import java.time.Duration;
 
 
 @DisplayName(value = "Домашнее задание - Урок 5: JUnit:Утверждения")
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class DzFiveTest {
     WebDriver driver;
 
@@ -37,12 +38,13 @@ public class DzFiveTest {
             driver.quit();
         }
     @Test
+    @Order(1)
     @DisplayName(value = "Создание заметки")
     public void createNoteTest(){
         //Объявляем WebDriverWait
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         //Клик по кнопке Создание заметки
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class,'Card_container')][1]"))).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'Card_container')][1]"))).click();
        //Заполнение Заголовка заметки
         driver.findElement(By.xpath("//div[contains(@id,'note-modal-title')][1]")).sendKeys("Заметка номер 1");
         //Заполнение Содержания заметки
@@ -59,6 +61,7 @@ public class DzFiveTest {
         Assertions.assertEquals("Заметка номер 1",titleText, "Неверный заголовок заметки");
     }
     @Test
+    @Order(2)
     @DisplayName(value = "Содержание заметки")
     public void checkNoteTextTest() {
         //Сохранение значения из содержания
@@ -67,6 +70,7 @@ public class DzFiveTest {
         Assertions.assertEquals("Содержание к заметке номер 1",contentText, "Неверное описание заметки");
     }
     @Test
+    @Order(3)
     @DisplayName(value = "Цвет заметки")
     public void checkNoteColorTest() {
         //Сохранение цвета заметки
