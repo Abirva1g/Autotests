@@ -1,12 +1,11 @@
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import java.time.Duration;
-import org.junit.Test;
 @DisplayName(value = "Тест проверка заголовки заметки")
 public class AssertionsTest {
     WebDriver driver;

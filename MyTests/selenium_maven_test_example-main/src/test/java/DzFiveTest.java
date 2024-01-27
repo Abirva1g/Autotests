@@ -45,7 +45,7 @@ public class DzFiveTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         //Клик по кнопке Создание заметки
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'Card_container')][1]"))).click();
-       //Заполнение Заголовка заметки
+        //Заполнение Заголовка заметки
         driver.findElement(By.xpath("//div[contains(@id,'note-modal-title')][1]")).sendKeys("Заметка номер 1");
         //Заполнение Содержания заметки
         driver.findElement(By.xpath("//div[contains(@id,'note-modal-content')][1]")).sendKeys("Содержание к заметке номер 1");
