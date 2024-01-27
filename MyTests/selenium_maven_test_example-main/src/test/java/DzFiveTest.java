@@ -46,13 +46,13 @@ public class DzFiveTest {
         //Клик по кнопке Создание заметки
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'Card_container')][1]"))).click();
         //Заполнение Заголовка заметки
-        driver.findElement(By.xpath("//div[contains(@id,'note-modal-title')][1]")).sendKeys("Заметка номер 1");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@id,'note-modal-title')][1]"))).sendKeys("Заметка номер 1");
         //Заполнение Содержания заметки
-        driver.findElement(By.xpath("//div[contains(@id,'note-modal-content')][1]")).sendKeys("Содержание к заметке номер 1");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@id,'note-modal-content')][1]"))).sendKeys("Содержание к заметке номер 1");
         //Нажатие на палитру
-        driver.findElement(By.id("palette-btn-new_empty")).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("palette-btn-new_empty"))).click();
         //Выбор цвета заметки
-        driver.findElement(By.xpath("//div[contains(@id,'#fdcfe8')][1]")).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@id,'#fdcfe8')][1]"))).click();
         //Нажатие кнопки Ок
         driver.findElement(By.id("note-modal-save-btn-new_empty")).click();
         //Сохранение значения из заголовка
