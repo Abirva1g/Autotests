@@ -47,12 +47,14 @@ public class DzFiveTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@id,'#fdcfe8')]"))).click();
         //Нажатие кнопки Ок
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("note-modal-save-btn-new_empty"))).click();
+        //Рефреш страницы
+        driver.navigate().refresh();
         //Получаем ид последнего контейнера заметок
-        String lastId = driver.findElement(By.xpath("//*[contains(@*,'note-container')][last()]")).getAttribute("id");
+        String lastId = driver.findElement(By.xpath("//*[contains(@id,'note-container')][last()]")).getAttribute("id");
         //Обрезаем ид заметки
         lastId=lastId.substring(15);
         //Поиск заголовка последней заметки
-        String titleText = driver.findElement(By.id("note-title"+'-'+lastId)).getText();
+        String titleText = driver.findElement(By.id("note-title-"+lastId)).getText();
         //Сравнение
         Assertions.assertEquals("Заметка номер 1", titleText, "Неверный заголовок заметки");
     }
