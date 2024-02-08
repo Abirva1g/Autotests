@@ -29,7 +29,7 @@ public class DzTen {
 
     @Test
     @DisplayName(value = "Домашнее задание - Урок 10-1: Java:Циклы")
-    public void createNoteTest() {
+    public void createEditNoteTest() {
         for (int i = 0; i < 3; i++) {
 
             //Объявляем WebDriverWait
