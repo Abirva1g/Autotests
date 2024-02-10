@@ -4,13 +4,13 @@ import Code.AnotherPackage.DzElevenMethods;
 public class DzElevenMain {
     public static void main(String[] args) {
         System.out.println("Задание 1");
-       DzElevenMethods.First();
+       DzElevenMethods.first();
         System.out.println('\n'+"Задание 2");
-       DzElevenMethods.Second();
+       DzElevenMethods.second();
         System.out.println('\n'+"Задание 3");
-        DzElevenMethods.Third();
+        DzElevenMethods.third();
         System.out.println('\n'+"Задание 4");
-       DzElevenMethods.Fourth();
+       DzElevenMethods.fourth();
     }
 }
 
