@@ -22,7 +22,7 @@ public class DzElevenMethods {
     public static void fourth() {
         String textIndex = "Домашнее задание не проблема";
         System.out.println(textIndex.indexOf("не"));
-        System.out.println(textIndex.indexOf("не", textIndex.indexOf("задание")));
+        System.out.println(textIndex.lastIndexOf("не"));
     }
     }
 

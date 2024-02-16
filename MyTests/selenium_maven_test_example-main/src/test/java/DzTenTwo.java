@@ -93,7 +93,19 @@ public class DzTenTwo {
             //Поиск заголовка последней заметки
             String titleText = driver.findElement(By.id("note-title-" + lastId)).getText();
             //Вывод в консоль названия заголовка заметки
-            System.out.printf("Итерация:%d Название:%s\n",j+1, titleText);
+            System.out.printf("Итерация:%d\tДО:    Заголовок:%s\n",j+1, titleText);
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.id("note-edit-btn-" + lastId))).click();
+            //Очищение заголовка заметки
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("note-modal-title-" + lastId))).click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("note-modal-title-" + lastId))).clear();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("note-modal-title-" + lastId))).sendKeys("Новый заголовок заметки номер " +(j+1));
+            //Нажатие кнопки Ок
+            wait.until(ExpectedConditions.elementToBeClickable(By.id("note-modal-save-btn-"+ lastId))).click();
+            driver.navigate().refresh();
+            titleText = driver.findElement(By.id("note-title-" + lastId)).getText();
+            System.out.printf("            ПОСЛЕ: Заголовок:%s\n\n", titleText);
+
+
         }
     }
     @AfterEach
