@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.TimeUnit;
 
 
-public class DzTest extends BaseTest {
+public class DzSixteen extends BaseTest {
     @DisplayName(value = "Урок 16: Паттерны проектирования в автоматизации тестирования")
     @Test
     public void testCheckNote() {
