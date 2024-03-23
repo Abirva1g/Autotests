@@ -119,6 +119,6 @@ import java.util.Map;
                 .get("http://172.24.120.5:8081/api/users/LEThirteen_NewUser9/notes")
                 .then()
                 .statusCode(200).assertThat()
-                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema.json"));
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("note_schema.json"));
     }
     }
