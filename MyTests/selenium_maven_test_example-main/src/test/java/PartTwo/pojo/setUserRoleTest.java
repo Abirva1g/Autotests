@@ -54,8 +54,8 @@ public class setUserRoleTest {
 
         ObjectMapper objectMapper = new ObjectMapper();
 
-        objectMapper.writeValue(new File("target/role.json"), role1);
-        Role createRole =  objectMapper.readValue(new File("target/role.json"), Role.class);
+        objectMapper.writeValue(new File("target/note_schema.json"), role1);
+        Role createRole =  objectMapper.readValue(new File("target/note_schema.json"), Role.class);
         System.out.println(createRole);
     }
 

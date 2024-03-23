@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "Часть 2 ур 13"
+        },
+        "content": {
+          "type": "Проверки"
+        },
+        "color": {
+          "type": "#fdcfe8"
+        },
+        "priority": {
+          "type": "35"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "content",
+        "color",
+        "priority"
+      ]
+    }
+  ]
+}
