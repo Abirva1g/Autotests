@@ -2,7 +2,8 @@ package PartTwo.DTO;
 
 import lombok.*;
 import java.util.List;
-@Data
+@Getter
+@Setter
 public class UserCreationDTO {
     private String login;
     private String password;
